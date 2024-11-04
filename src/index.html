@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator :D</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header>
+        <h1>Калькулятор</h1>
+    </header>
+    <main>
+
+        <div id="calc-body">
+            <div id="input-line">
+                <input type="text" name="Введіть" id="in1">
+            </div>
+            <div id="inner-box">
+                <div id="buttons">
+                    <button id="btn1" class="but-num" onclick="input.value+=1">1</button>
+                    <button id="btn2" class="but-num" onclick="input.value+=2">2</button>
+                    <button id="btn3" class="but-num" onclick="input.value+=3">3</button>
+                    <button id="btn4" class="but-num" onclick="input.value+=4">4</button>
+                    <button id="btn5" class="but-num" onclick="input.value+=5">5</button>
+                    <button id="btn6" class="but-num" onclick="input.value+=6">6</button>
+                    <button id="btn7" class="but-num" onclick="input.value+=7">7</button>
+                    <button id="btn8" class="but-num" onclick="input.value+=8">8</button>
+                    <button id="btn9" class="but-num" onclick="input.value+=9">9</button>
+                    <button id="btn0" class="but-num" onclick="input.value+=0">0</button>  
+                    <button id="btn0" class="but-num" onclick="changeSymbol('.')">.</button>  
+                    <button id="equal" class="but-num">=</button>             
+                </div>
+                <div id="buttons2">
+                    <button class="but-num" onclick="changeSymbol('+')">+</button>
+                    <button class="but-num" onclick="changeSymbol('-')">-</button>
+                    <button class="but-num" onclick="changeSymbol('*')">*</button>
+                    <button class="but-num" onclick="changeSymbol('/')">/</button>
+                </div>
+            </div>
+            <div id="lower-panel">
+                <button id="AC"class="but-num" onclick="input.value=''">AC</button>
+                <button id="back" class="but-num"><</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

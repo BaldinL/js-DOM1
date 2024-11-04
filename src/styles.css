@@ -1,0 +1,102 @@
+*{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 80px;
+}
+html{
+    background: radial-gradient(#e96157,#e94d42)
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100px;  
+}
+main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calc-body{
+    height: 540px;
+    width: 400px;
+    border: 3px solid black;
+    background-color: #e94d42;
+    box-shadow: 5px 5px black;
+    border-radius: 20px;
+}
+#in1{
+    width: 370px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#input-line{
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e96157;
+}
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+}
+#buttons2{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#lower-panel{
+    width: 250;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+#buttons3{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.but-num{
+    border-radius: 7px;
+    background-color: #e94d42;
+    box-shadow: 2px 2px black;
+    border: 3px solid black;
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.but-num:hover{
+    transition: none;
+    background-color: #71241f;
+    border-radius: 7px;
+    position: relative;
+}
+.but-num:active{
+    background-color: #71241f;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    transition: none;
+    box-shadow: none;
+    border-radius: 6px;
+
+}
+#inner-box{
+    display: flex;
+    justify-content: center;
+}
+/* #equal{
+    width: 160px;
+} */
+#AC{
+    width: 160px;
+}
+#back{
+    width: 160px;
+}
