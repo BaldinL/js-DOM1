@@ -38,7 +38,7 @@ equal.addEventListener('click', ()=>{
     let check = input.value.split('-');
     check = check.join('').split('+').join('').split('*').join('').split('/').join('').split('.').join('');
     if(check.split('').every(el => checkNumber(el))){
-        input.value =  eval(input.value);
+        input.value =  eval(input.value).toFixed(2);
     }else{
         input.value = "Error"
     }
